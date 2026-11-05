@@ -13,6 +13,11 @@ header {
   align-items: center;
 }
 
+#logo {
+  width: 150px;
+  height: auto;
+}
+
 nav a {
   color: white;
   text-decoration: none;
