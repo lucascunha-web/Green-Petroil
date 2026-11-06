@@ -1,11 +1,11 @@
   <header>
-    <a class="marca" href="#" aria-label="Página inicial da Green Petroil">
+    <a class="marca" routerLink="/" aria-label="Página inicial da Green Petroil">
       <img id="logo" src="logo.png" alt="Green Petroil">
       <span>GREEN PETROIL</span>
     </a>
     <nav>
-      <a class="ativo" href="#">Página inicial</a>
-      <a href="#">Sobre Nós</a>
-      <a href="#">Projetos Sociais</a>
+      <a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Página inicial</a>
+      <a routerLink="/sobre-nos" routerLinkActive="ativo">Sobre Nós</a>
+      <a routerLink="/projetos-sociais" routerLinkActive="ativo">Projetos Sociais</a>
     </nav>
   </header>

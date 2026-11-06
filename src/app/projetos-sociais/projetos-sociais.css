@@ -1,0 +1,107 @@
+:host {
+  flex: 1;
+  display: block;
+}
+
+main {
+  min-height: 100%;
+  background: #f3f5ef;
+  color: #102619;
+}
+
+.introducao {
+  min-height: 260px;
+  padding: 64px clamp(24px, 8vw, 120px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #102619;
+  background: #f3f5ef;
+}
+
+.rotulo {
+  color: #8bc55a;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.introducao h1 {
+  margin-top: 18px;
+  font-family: sans-serif;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.05;
+}
+
+.introducao > p:last-child {
+  max-width: 680px;
+  margin-top: 24px;
+  color: #526057;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 64px clamp(24px, 8vw, 120px) 80px;
+}
+
+.projeto {
+  overflow: hidden;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(11, 29, 18, 0.08);
+}
+
+.imagem-projeto {
+  height: 220px;
+  width: 100%;
+  border-bottom: 4px solid #6fae3b;
+  background: #e2e8df;
+  object-fit: cover;
+  display: block;
+}
+
+.conteudo-projeto {
+  padding: 28px;
+  font-family: sans-serif;
+}
+
+.conteudo-projeto > span {
+  color: #6fae3b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.conteudo-projeto h2 {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.descricao {
+  margin-top: 16px;
+  color: #526057;
+  line-height: 1.6;
+}
+
+.objetivo {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #dde3da;
+  color: #3f5145;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .projetos {
+    grid-template-columns: 1fr;
+  }
+}
